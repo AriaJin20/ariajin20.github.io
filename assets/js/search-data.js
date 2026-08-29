@@ -25,14 +25,14 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Research reproductions and independent projects in AI safety, causal inference, and machine learning.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          description: "Open-source code from my research reproductions and side projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";

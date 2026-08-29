@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ariajin20.github.io/sitemap.xml
+Sitemap: https://floriajin.github.io/sitemap.xml
