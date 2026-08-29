@@ -1,7 +1,14 @@
 github_users:
-  - AriaJin20
+  - FloriaJin
 
 github_repos:
-  - AriaJin20/ariajin20.github.io
+  - FloriaJin/vlm-failure-mode-analysis
+  - FloriaJin/latent-adversarial-training-reproduction
+  - FloriaJin/LogLLM-reproduction
+  - FloriaJin/merina-reproduction-adp-analysis
+  - FloriaJin/Minimal-MERINA-reproduction
+  - FloriaJin/imitation-learning-mujoco
+  - FloriaJin/symmetry-net
+  - FloriaJin/floriajin.github.io
 
 repo_description_lines_max: 2

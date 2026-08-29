@@ -4,7 +4,7 @@
     "label": "Junior AI Researcher · Statistics @ UIUC",
     "image": "",
     "email": "beixuan2@illinois.edu",
-    "url": "https://ariajin20.github.io",
+    "url": "https://floriajin.github.io",
     "summary": "B.S. in Statistics (Minor in Mathematics) at UIUC. I work at the intersection of statistics, machine learning, and AI safety—focusing on alignment, causal inference, Bayesian methods, and graph machine learning. My strength is cross-domain transfer: taking a framework apart functionally, testing causal directions with minimal experiments, and combining complementary streams into a working loop.",
     "location": {
       "city": "Champaign",
@@ -14,8 +14,8 @@
     "profiles": [
       {
         "network": "GitHub",
-        "username": "AriaJin20",
-        "url": "https://github.com/AriaJin20"
+        "username": "FloriaJin",
+        "url": "https://github.com/FloriaJin"
       },
       {
         "network": "LinkedIn",
@@ -32,9 +32,9 @@
       "endDate": "2026-04-30",
       "summary": "Climate Risk Assessment System.",
       "highlights": [
-        "Applied the ISI-MIP ATTRICI framework (Python, xarray, netCDF4, PyMC/SciPy) to generate counterfactual climate datasets for aviation emission trade-off risk assessment.",
-        "Ran the 8-step detrending and quantile-mapping pipeline to fit variable-specific statistical models and preserve observational rank structure across scenarios.",
-        "Built probabilistic risk-analysis and visualization workflows to assess CO2 vs. non-CO2 aviation emission trade-offs for research decision support."
+        "Applied the ISI-MIP ATTRICI framework (Python, xarray, netCDF4, PyMC/SciPy) to generate counterfactual climate datasets, adjusting factual observations into stationary scenarios for aviation emission trade-off risk assessment.",
+        "Ran the framework's 8-step detrending and quantile-mapping pipeline to scale time-series data, fit variable-specific statistical models, estimate factual and counterfactual distributions, and preserve observational rank structure across transformed scenarios.",
+        "Built probabilistic risk-analysis and visualization workflows to assess CO2 vs. non-CO2 aviation emission tradeoffs, using Python/R dashboards to summarize counterfactual climate shifts and scenario feasibility for research decision support."
       ]
     },
     {
@@ -44,20 +44,22 @@
       "endDate": "2026-04-30",
       "summary": "Aviation Personnel Mental Health Tracking Application.",
       "highlights": [
-        "Implemented a session-memory component for a mental-health support agent using LangGraph, FastAPI, and PostgreSQL/pgvector with CoALA-inspired memory design.",
-        "Structured memory into three CoALA-inspired layers—semantic facts, episodic arcs, and procedural rules—for longitudinal mental-health tracking.",
-        "Connected memory and safety logic across five interfaces (CLI, Next.js web chat, LiveKit web voice, Telegram, FastAPI backend)."
+        "Implemented a session-memory component for an OpenCouch-style mental-health support app using LangGraph, FastAPI, and PostgreSQL/pgvector, with CoALA-inspired memory design supporting continuity across sessions and durable persistence.",
+        "Structured memory into three CoALA-inspired layers—semantic facts, episodic arcs, and procedural rules—enabling the backend to retrieve user check-in summaries, support preferences, and recurring mental-health context before follow-up responses.",
+        "Connected memory and safety logic across five supported interfaces—CLI, Next.js web chat, LiveKit web voice, Telegram DM gateway, and FastAPI backend API—to support longitudinal tracking of aviation personnel's self-reported mental health status."
       ]
     },
     {
       "name": "Zhongshan Securities Co., Ltd",
-      "position": "AI Software Developer Intern",
+      "position": "Quantitative Research Intern",
       "startDate": "2025-06-01",
       "endDate": "2025-08-31",
       "highlights": [
-        "Built a heterogeneous fraud-graph preprocessing pipeline (Python, pandas, DGL, SageMaker) over the IEEE-CIS fraud dataset for transaction-risk classification.",
-        "Trained graph-based fraud classifiers with DGL, comparing GNN relational modeling against MLP and XGBoost baselines.",
-        "Configured an end-to-end AWS deployment workflow with Lambda triggers, custom Docker images, S3, IAM, and CloudFormation."
+        "Built a Python (pandas) ingestion and cleaning layer over 100+ listed companies' H1 2025 filings, standardizing heterogeneous accounting line items into a unified schema supporting multi-dimensional comparison of revenue, profit, and gross margin.",
+        "Integrated the Wind API for market data extraction (prices, PE ratios, ETF constituents, cash-flow series) and designed an indexed SQL schema over Wind-classified industry taxonomy, tuning composite indexes to the dominant query patterns of the research desk.",
+        "Developed a Streamlit/Plotly dashboard tracking the top-10 companies by net asset value within each industry, with sector-level toggles supporting both single-sector drilldown and multi-sector horizontal comparison.",
+        "Implemented walk-forward (rolling-origin) cross-validation for a volatility research effort—the correct validation scheme for time-series data where random k-fold splits leak future information and produce optimistically biased estimates.",
+        "Authored an internal research primer on risk budgeting and risk parity, synthesizing Meketa and CAIA white papers, CFA Level III curriculum, and Bruder & Roncalli (2012); derived the equivalence between marginal and covariance-based views of risk contribution and quantified how volatility drag causes returns to leverage to saturate rather than scale linearly."
       ]
     },
     {
@@ -66,9 +68,9 @@
       "startDate": "2025-01-01",
       "endDate": "2025-05-31",
       "highlights": [
-        "Adapted AWS's sagemaker-graph-fraud-detection solution, running its preprocessing pipeline on IEEE-CIS data for fraud classification.",
-        "Evaluated graph-based fraud classifiers using DGL heterogeneous graphs and RGCN against MLP and XGBoost baselines.",
-        "Deployed the end-to-end AWS workflow with Lambda-triggered modules, Docker images, S3, IAM, and CloudFormation."
+        "Adapted AWS's open-source sagemaker-graph-fraud-detection solution, running its pandas-based preprocessing pipeline via SageMaker Processing to convert IEEE-CIS tabular transaction data into node features, labels, and relational edge lists for fraud classification.",
+        "Evaluated graph-based fraud classifiers using DGL's heterogeneous graph construction and RGCN training against two feature-based baselines (MLP and XGBoost) on SageMaker model training infrastructure.",
+        "Deployed the end-to-end AWS workflow comprising two Lambda-triggered modules (data preprocessing and graph modeling), custom Docker processing images, S3 data channels, IAM roles, and CloudFormation templates for reproducible training and endpoint testing."
       ]
     },
     {
@@ -77,10 +79,10 @@
       "startDate": "2024-05-01",
       "endDate": "2024-09-30",
       "highlights": [
-        "Built a multilingual OCR engine supporting 20 languages at 96% per-image accuracy, 1.5s/image, 100K+ daily volume.",
-        "Developed OpenCV-based image enhancement and YOLOv8 text detection (94.2% localization), improving blurred-image recognition by 30%.",
-        "Built a multi-engine translation service (FastAPI, Google/Baidu/DeepL) supporting 50+ languages at 300ms average latency.",
-        "Developed an AI text-polishing system on GPT-3.5 with prompt engineering, improving readability by 30% and reaching 89% user satisfaction."
+        "Built a multilingual OCR text recognition engine supporting 20 languages (Chinese, English, Japanese, Korean, etc.) at 96% per-image accuracy, 1.5s per image, and 100K+ daily volume.",
+        "Developed OpenCV-based image enhancement for denoising, correction, and contrast adjustment, and applied YOLOv8 for text detection, achieving 94.2% localization accuracy and improving recognition success on blurred images by 30%.",
+        "Built a multi-engine translation service with FastAPI, integrating Google Translate, Baidu, and DeepL APIs; supported 50+ languages at 300ms average response time and 500K+ daily translations with 92% accuracy.",
+        "Developed an AI-powered text polishing system on OpenAI GPT-3.5 supporting academic and business styles, applying prompt engineering to improve readability by 30% and reach 89% user satisfaction."
       ]
     }
   ],
@@ -98,9 +100,88 @@
   "publications": [
     {
       "name": "Mathematically Optimizing Doctoral Consortium Group Assignment",
-      "publisher": "Undergraduate Research Symposium (Submitted)",
+      "publisher": "Undergraduate Research Symposium 2026 (Submitted)",
       "releaseDate": "2026",
       "summary": "Beixuan Jin, Dylan Wu, et al. University of Illinois Urbana-Champaign."
+    }
+  ],
+  "projects": [
+    {
+      "name": "MERINA — Improving Generalization for Neural Adaptive Video Streaming via Meta Reinforcement Learning",
+      "summary": "Research reproduction · Meta-Reinforcement Learning",
+      "highlights": [
+        "Reproduced a two-stage meta-RL pipeline for adaptive bitrate (ABR) streaming: VAE-based imitation learning for environment-context encoding followed by PPO-based policy optimization with GAE, on FCC and HSDPA bandwidth traces.",
+        "Compared MERINA's meta-adaptation generalization against rule-based baselines (BOLA, RobustMPC) on out-of-distribution traces (Puffer, Oboe), separating few-shot adaptation via latent-space task inference from zero-shot transfer robustness."
+      ]
+    },
+    {
+      "name": "BLSP — Long-term, Medium Spatial Resolution Annual Land Surface Phenology with a Bayesian Hierarchical Model",
+      "summary": "Research reproduction · Bayesian Modeling",
+      "highlights": [
+        "Reproduced the BLSP hierarchical Bayesian model by configuring the rjags-to-JAGS Gibbs Sampler MCMC pipeline, fitting 6- and 7-parameter double-logistic curves to sparse Landsat EVI2 time series with credible intervals.",
+        "Evaluated the trade-off between interannual variability fidelity and data-sparse robustness inherent to the hierarchical prior design, and built a Dockerized reproducible environment to resolve JAGS binary and R package version dependencies."
+      ]
+    },
+    {
+      "name": "SecAlign — Defending Against Prompt Injection with Preference Optimization",
+      "summary": "Research reproduction · LLM Security & Alignment",
+      "highlights": [
+        "Ran SecAlign training with PyTorch, Transformers, DPO, and LoRA to teach the model to prefer legitimate instructions over injected prompts.",
+        "Configured preference data construction with prompt-injected inputs, secure outputs, and insecure outputs to compare preference optimization against StruQ-style defensive SFT."
+      ]
+    },
+    {
+      "name": "Circuit Breakers — Improving Alignment and Robustness with Circuit Breakers",
+      "summary": "Research reproduction · Representation Engineering",
+      "highlights": [
+        "Trained circuit-breaker adapters with CustomTrainer, compute_loss, and CircuitBreakerDataset using Transformers, PEFT LoRA, PyTorch, and DeepSpeed to alter harmful hidden representations while retaining benign behavior.",
+        "Mapped the training workflow from retain data and circuit-breaker prompts through tokenization masks, hidden-state loss, and LoRA merge utilities to understand representation intervention versus refusal-only alignment."
+      ]
+    },
+    {
+      "name": "Safe-RLHF — Safe Reinforcement Learning from Human Feedback",
+      "summary": "Research reproduction · LLM Safety Alignment",
+      "highlights": [
+        "Executed the full Safe-RLHF training sequence across SFT, reward model, cost model, and PPO-Lag scripts using DeepSpeed, Transformers, Hugging Face datasets, and W&B to study helpfulness and harmlessness as separate optimization signals.",
+        "Inspected the framework modules under safe_rlhf.algorithms, scripts, and model-training entrypoints to connect actor model, reward model, cost model, KL control, and the Lagrangian safety constraint during policy optimization."
+      ]
+    },
+    {
+      "name": "Latent Adversarial Training — Improving Robustness to Persistent Harmful Behaviors in LLMs",
+      "summary": "Research reproduction · AI Safety",
+      "highlights": [
+        "Traced latent adversarial attack and training workflows across latent_at modules and experiment notebooks using PyTorch, Transformers, PEFT, and TransformerLens to understand residual-stream perturbation for jailbreak, backdoor, and unlearning tasks.",
+        "Adapted the experiment setup across notebooks, task installation scripts, and model-loading paths with Hugging Face, FastChat, DeepSpeed, and lm_eval to handle dependency compatibility and local runtime execution."
+      ]
+    },
+    {
+      "name": "LogLLM — Log-based Anomaly Detection Using Large Language Models",
+      "summary": "Research reproduction · Anomaly Detection / System Security",
+      "highlights": [
+        "Reproduced the BERT, projector, and Llama classification pipeline on HDFS/BGL-style log sequences, aligning semantic log embeddings with decoder-based sequence classification for parser-free anomaly detection.",
+        "Configured Python 3.8, CUDA 12.1, Torch 2.4, Hugging Face model paths, and dataset-specific sliding/session windows to resolve environment setup and large-log preprocessing issues."
+      ]
+    },
+    {
+      "name": "Price Elasticity Estimation via Double Machine Learning",
+      "summary": "Personal project · Causal Inference — scikit-learn, pandas, RandomForest, OLS, parquet, Kaggle Online Retail",
+      "highlights": [
+        "Built a DML-based price elasticity pipeline with cross-fitting, engineered product/temporal/stock confounders, residualized log-price and log-quantity using RandomForest models, and estimated debiased causal elasticity via OLS."
+      ]
+    },
+    {
+      "name": "Introspective Safety Alignment Pipeline",
+      "summary": "Personal project · Safety Alignment — vLLM, DPO, FastAPI, OpenAI API, DeepSpeed, Python",
+      "highlights": [
+        "Built a STAIR's SI-MCTS safety-alignment workflow, tuning MCTS generation, actor prompts, model checkpoints, reward rules, and Python 3.11 dependencies to generate pairwise DPO data and compare CoT-style SFT with step-level DPO safety tuning."
+      ]
+    },
+    {
+      "name": "Customer Incentive Recommendation System",
+      "summary": "Personal project · Causal Inference — DoWhy, EconML, causal-learn PC, NetworkX, MLflow, pygraphviz, Databricks CPU",
+      "highlights": [
+        "Customized a Databricks causal ML accelerator spanning causal discovery, effect identification, DML estimation, recommendation, and refutation, using background knowledge and graph corrections to estimate promotion effects from biased historical allocation data."
+      ]
     }
   ],
   "skills": [
@@ -110,19 +191,19 @@
     },
     {
       "name": "ML & LLM",
-      "keywords": ["PyTorch", "Hugging Face Transformers", "vLLM", "DeepSpeed", "PEFT/LoRA", "DPO", "LangGraph"]
+      "keywords": ["PyTorch", "Hugging Face Transformers", "vLLM", "DeepSpeed", "PEFT/LoRA", "DPO", "LangGraph", "Sentence-Transformers", "BERT"]
     },
     {
       "name": "Causal & Bayesian",
-      "keywords": ["DoWhy", "EconML", "CausalML", "PyMC", "GPyTorch", "BoTorch", "JAGS/rjags"]
+      "keywords": ["DoWhy", "EconML", "CausalML", "PyMC", "GPyTorch", "BoTorch", "JAGS/rjags", "SciPy", "xarray", "scikit-learn"]
     },
     {
       "name": "Graph & CV",
-      "keywords": ["DGL", "NebulaGraph", "NetworkX", "OpenCV", "YOLOv8", "CLIP/OpenCLIP", "BERT"]
+      "keywords": ["DGL", "NebulaGraph", "NetworkX", "OpenCV", "YOLOv8", "CLIP/OpenCLIP"]
     },
     {
       "name": "Infra & Tools",
-      "keywords": ["Docker", "SageMaker", "MLflow", "FastAPI", "Next.js", "W&B", "Poetry"]
+      "keywords": ["Docker", "SageMaker", "MLflow", "FastAPI", "Next.js", "W&B", "pandas", "Poetry"]
     }
   ],
   "interests": [
@@ -134,9 +215,13 @@
         "Bayesian Optimization / Modeling",
         "Graph Machine Learning",
         "LLM Security",
+        "Anomaly Detection",
+        "Meta-Reinforcement Learning",
+        "Natural Language Processing",
+        "Computer Vision (Zero-Shot Defect Detection)",
         "Representation Engineering",
         "Agentic AI",
-        "Multimodal LLMs"
+        "Multimodal LLMs (Vision-Language Models)"
       ]
     }
   ]
